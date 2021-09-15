@@ -1,0 +1,61 @@
+h1{
+    text-transform: uppercase;
+}
+
+.box-display{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+}
+
+.left-arrow, .right-arrow{
+    width: 5%;
+    font-size: 3rem;
+}
+
+.left-arrow i, .right-arrow i{
+    padding: 5px 13px;
+}
+
+.box-display i:hover{
+    background-color: rgba(41, 40, 40, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.display-image{
+    width: 100%;
+}
+
+.display-image img{
+    height: 100%; 
+    width: 100%;
+
+}
+
+.circle-nav-container{
+    background-color: rgba(75, 0, 130, 0.4);
+    padding: 8px;
+    border-radius: 25px;
+    width: max-content;
+    margin: auto;
+}
+
+.circle-nav{
+    margin: 0 4px;
+    height: 25px;
+    width: 25px;
+    background-color: indigo;
+    border-radius: 50%;
+}
+
+.circle-nav:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.active{
+    background-color: crimson;
+
+}
+

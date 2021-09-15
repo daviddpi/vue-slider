@@ -37,6 +37,7 @@ let main = new Vue({
         ],
         indexImage: 0,
         classeAttiva: "active",
+        show: true
     },
     methods: {
         nextImage(){
@@ -58,8 +59,6 @@ let main = new Vue({
         activeImage(circle){
             this.indexImage = circle - 1;
         }
-
-        
     }
 });
 

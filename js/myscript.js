@@ -53,7 +53,15 @@ let main = new Vue({
                 this.indexImage = this.immagine.length - 1;
             }
             console.log(this.indexImage, this.immagine.length);
+        },
+
+        activeImage(circle){
+            this.indexImage = circle - 1;
         }
+
+        
     }
 });
-console.log("ciao");
+
+//funzione che cambia automaticamente l'immagine in avanti ogni 3 secondi
+let clock = setInterval(main.nextImage, 3000);

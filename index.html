@@ -49,9 +49,7 @@
             <div class="row">
                 <!-- menù navbar -->
                 <div class="circle-nav-container d-flex justify-content-center mb-3">
-                    <div v-for="circle in immagine.length" v-if="(circle == indexImage+1) ? :class='classeAttiva' : ''" class="circle-nav">
-                        <p>{{ circle }} {{ indexImage + 1 }}</p>
-                    </div>
+                    <div @click="activeImage(circle)" v-for="circle in immagine.length" :class="(circle == indexImage+1) ? classeAttiva : ''" class="circle-nav"></div>
                 </div>
             </div> 
         </div>
@@ -60,4 +58,3 @@
     <script src="js/myscript.js"></script>
 </body>
 </html>
-<!-- v-if="(circle == indexImage) ? :class='active' : '' " -->

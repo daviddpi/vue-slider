@@ -36,11 +36,12 @@ let main = new Vue({
             
         ],
         indexImage: 0,
+        classeAttiva: "active",
     },
     methods: {
         nextImage(){
             this.indexImage++;
-            if(this.indexImage >= this.immagine.length - 1){
+            if(this.indexImage >= this.immagine.length){
                 this.indexImage = 0;
             }
             console.log(this.indexImage, this.immagine.length);

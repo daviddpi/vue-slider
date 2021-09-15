@@ -40,20 +40,18 @@ let main = new Vue({
     methods: {
         nextImage(){
             this.indexImage++;
-            if(this.indexImage >= immagine.lenght){
+            if(this.indexImage >= this.immagine.length - 1){
                 this.indexImage = 0;
             }
-            console.log(this.indexImage, immagine.lenght);
-
+            console.log(this.indexImage, this.immagine.length);
         },
 
         behindImage(){
             this.indexImage--;
             if(this.indexImage < 0){
-                this.indexImage = immagine.lenght - 1;
+                this.indexImage = this.immagine.length - 1;
             }
-            console.log(this.indexImage, immagine.lenght);
-
+            console.log(this.indexImage, this.immagine.length);
         }
     }
 });
